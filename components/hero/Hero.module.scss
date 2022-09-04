@@ -1,0 +1,36 @@
+@import "../../utils//breakpoints.scss";
+
+.heroContainer {
+    width: 100vw;
+    background-image: url("/images/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $md) {
+        height: 75vh;
+        padding: 0 2rem;
+    }
+    
+}
+
+.heroText {
+    font-family: "Raleway";
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+
+    @media (min-width: $sm){
+        font-size: 2.8rem;
+    }
+
+    @media (min-width: $md){
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,10 @@
+@import "../../styles/colors.scss";
+
+.buttonContainer {
+    background-color: $yellow-color;
+    padding: 10px 24px;
+    color: $blue-color;
+    border-radius: 4px;
+    font-family: "Poppins";
+    box-shadow: -1px 1px 5px 2px black;
+}

@@ -1,0 +1,55 @@
+@import "../../styles/colors.scss";
+@import "../../utils//breakpoints.scss";
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $yellow-color;
+    color: $blue-color;
+    width: 100vw;
+    padding: 8px 16px;
+
+    @media (min-width: $lg){
+        padding: 16px 24px;
+    }
+
+    .hamburgerMenu {
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        border: 1px solid $blue-color;
+        border-radius: 2px;
+        padding: 8px;
+        z-index: 1;
+    
+        @media (min-width: $sm) {
+            display: none;
+        }
+    
+        .hamburgerMenuLine {
+            width: 24px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: $blue-color;
+        }
+    }
+
+    .navbarLink {
+        font-family: "Nunito Sans";
+        color: $blue-color;
+        font-weight: bold;
+        border-bottom: 1.5px solid $blue-color;
+    }
+    
+    .imageContainer {
+        position: relative;
+        width: 60px;
+        height: 60px;
+
+        @media (min-width: $lg){
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

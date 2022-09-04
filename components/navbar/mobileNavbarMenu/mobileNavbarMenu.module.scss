@@ -1,0 +1,10 @@
+@import "../../../styles/colors.scss";
+@import "../../../utils/breakpoints.scss";
+
+
+:export {
+    yellowColor: $yellow-color;
+    blueColor: $blue-color;
+    sm: $sm;
+    lg: $lg;
+}

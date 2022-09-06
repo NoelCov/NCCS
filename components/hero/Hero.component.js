@@ -6,11 +6,11 @@ import { Button } from "../button/Button.component";
 
 export const Hero = () => {
     return (
-        <section className={styles.heroContainer}>
+        <div className={styles.heroContainer}>
             <h1 className={styles.heroText}>
-                Fast and reliable computer and cellphone repairs
+                FAST AND RELIABLE COMPUTER AND CELLPHONE REPAIRS
             </h1>
             <Button>VIEW SERVICES</Button>
-        </section>
+        </div>
     );
 };

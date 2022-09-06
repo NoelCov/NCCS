@@ -1,10 +1,29 @@
 @import "../../styles/colors.scss";
+@import "../../utils//breakpoints.scss";
 
 .buttonContainer {
-    background-color: $yellow-color;
+    background-color: $contrast-color;
     padding: 10px 24px;
-    color: $blue-color;
-    border-radius: 4px;
+    color: $primary-text-color;
+    border-radius: 6px;
     font-family: "Poppins";
-    box-shadow: -1px 1px 5px 2px black;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 12px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);    
+
+    &:hover {
+        background-color: $contrast-color-hover;
+    }
+
+    @media (min-width: $lg){
+        font-size: 2rem;
+        padding: 14px 48px;
+    }
+
+    @media (min-width: $xl){
+        padding: 14px 60px;
+    }
 }

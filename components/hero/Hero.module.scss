@@ -8,13 +8,22 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    height: 45vh;
+    height: 85vh;
     justify-content: center;
     align-items: center;
 
+    @media (min-width: $sm) {
+        height: 80vh;
+    }
+
     @media (min-width: $md) {
-        height: 75vh;
+        height: 85vh;
         padding: 0 2rem;
+    }
+
+    @media (min-width: $xl){
+        padding: 0;
+        height: 90vh;
     }
     
 }
@@ -23,14 +32,25 @@
     font-family: "Raleway";
     margin: 0;
     font-weight: 700;
-    font-size: 2.5rem;
     text-align: center;
+    width: 90vw;
+    font-size: 3.5rem;
 
     @media (min-width: $sm){
-        font-size: 2.8rem;
+        font-size: 3.5rem;
+        width: 75vw;
     }
 
     @media (min-width: $md){
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+
+    @media (min-width: $lg){
+        font-size: 5rem;
+    }
+
+    @media (min-width: $xl){
+        font-size: 8rem;
+        width: 60vw;
     }
 }

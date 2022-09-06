@@ -1,0 +1,58 @@
+@import "../styles/colors.scss";
+@import "../utils//breakpoints.scss";
+
+.servicesSection {
+    background-color: $primary-color;
+    padding: 54px 0;
+    text-align: center;
+    color: $primary-text-color;
+
+    @media (min-width: $sm) {
+        padding: 80px 0;
+    }
+
+    @media (min-width: $xl) {
+        padding: 200px 0;
+    }
+
+
+    .separator {
+        height: 3px;
+        background-color: $primary-text-color;
+        width: 80px;
+        border: none;
+        margin-bottom: 54px;
+
+        @media (min-width: $lg) {
+            width: 260px;
+            height: 5px;
+            margin-bottom: 100px;
+
+        }
+
+        @media (min-width: $xl) {
+            margin-bottom: 140px;
+        }
+    }
+
+    .servicesContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        @media (min-width: $sm) {
+            gap: 80px;
+        }
+
+        @media (min-width: $lg){
+            gap: 140px;
+        }
+
+
+        @media (min-width: $xl) {
+            flex-direction: row;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+    }
+}

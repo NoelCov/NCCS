@@ -1,0 +1,14 @@
+@import "../../utils//breakpoints.scss";
+
+.layout {
+    width: 75%;
+    margin: 0 auto;
+
+    @media (min-width: $md){
+        width: 45%;
+    }
+
+    @media (min-width: $xl) {
+        width: 70%;
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/colors.scss";
+@import "../../utils//breakpoints.scss";
+
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    // border: 2px solid $primary-text-color;
+    padding: 48px 16px;
+    border-radius: 5px;
+    background-color: $complementary-color;
+    box-shadow: rgb(0 0 0 / 25%) 0px 3px 6px 0px;
+
+    @media (min-width: $sm) {
+        gap: 24px;
+    }
+
+    @media (min-width: $md) {
+        gap: 32px;
+        border-width: 2px;
+        padding: 24px 32px;
+    }
+
+    @media (min-width: $xl) {
+        width: 550px;
+        padding: 80px 40px;
+    }
+
+    .iconContainer {
+        position: relative;
+        width: 60px;
+        height: 60px;
+
+        @media (min-width: $sm) {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media (min-width: $lg) {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}

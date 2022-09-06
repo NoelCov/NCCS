@@ -1,16 +1,22 @@
 import styled from "styled-components";
 
-import { yellowColor, blueColor, sm, lg } from "./mobileNavbarMenu.module.scss";
+import {
+    primaryColor,
+    darkColor,
+    sm,
+    lg,
+} from "./mobileNavbarMenu.module.scss";
 
 export const MobileNavbarMenu = styled.ul`
     display: flex;
-    background-color: ${yellowColor};
-    box-shadow: -1px 0 8px 3px ${blueColor};
+    background-color: ${primaryColor};
+    box-shadow: rgb(0 0 0 / 25%) 0px 12px 15px;
     position: fixed;
-    color: ${blueColor};
+    color: ${darkColor};
     right: ${(props) => (props.active ? "0" : "-500px")};
     top: 0;
     width: 70vw;
+    z-index: 2;
     height: 100vh;
     flex-direction: column;
     list-style: none;

@@ -6,7 +6,7 @@ import {
     sm,
     md,
     lg,
-} from "./mobileNavbarMenu.module.scss";
+} from "./MobileNavbarMenu.module.scss";
 
 export const MobileNavbarMenu = styled.ul`
     display: flex;

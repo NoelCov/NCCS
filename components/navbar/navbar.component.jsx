@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { useState } from "react";
 
-import styles from "./navbar.module.scss";
+import styles from "./Navbar.module.scss";
 
 import Logo from "../../public/images/logo.png";
 

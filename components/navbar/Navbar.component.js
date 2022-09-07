@@ -1,13 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { useState } from "react";
 
-import styles from "./Navbar.module.scss";
+import styles from "./navbar.module.scss";
 
 import Logo from "../../public/images/logo.png";
 
 import { MobileNavbarMenu } from "./mobileNavbarMenu/mobileNavbarMenu";
-import Link from "next/link";
 
 export const Navbar = () => {
     const [isActive, setIsActive] = useState(false);

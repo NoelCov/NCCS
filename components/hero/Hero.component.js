@@ -1,10 +1,8 @@
 import React from "react";
 
-import styles from "./Hero.module.scss";
+import styles from "./hero.module.scss";
 
 import { Button } from "../button/Button.component";
-
-import Link from "next/link";
 
 export const Hero = () => {
     return (

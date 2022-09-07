@@ -22,8 +22,6 @@ export const Navbar = () => {
                 <a className={styles.imageContainer}>
                     <Image
                         src={Logo}
-                        width={1920}
-                        height={1200}
                         layout="fill"
                         alt="A desktop computer and the text NCCS, acronym for Noel's Computer and Cellphones Services"
                     />
@@ -40,7 +38,10 @@ export const Navbar = () => {
             </div>
 
             <MobileNavbarMenu active={isActive}>
-                <li className={styles.navbarLink}>HOME</li>
+                <Link href="/">
+                    <li className={styles.navbarLink}>HOME</li>
+                </Link>
+
                 <li className={styles.navbarLink}>CONTACT US</li>
                 <li className={styles.navbarLink}>COMPUTER SERVICES</li>
                 <li className={styles.navbarLink}>CELLPHONE SERVICES</li>

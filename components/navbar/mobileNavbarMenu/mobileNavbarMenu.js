@@ -2,17 +2,18 @@ import styled from "styled-components";
 
 import {
     primaryColor,
-    darkColor,
+    primaryTextColor,
     sm,
+    md,
     lg,
 } from "./mobileNavbarMenu.module.scss";
 
 export const MobileNavbarMenu = styled.ul`
     display: flex;
     background-color: ${primaryColor};
-    box-shadow: rgb(0 0 0 / 25%) 0px 12px 15px;
+    box-shadow: -1px 1px 20px 1px black;
     position: fixed;
-    color: ${darkColor};
+    color: ${primaryTextColor};
     right: ${(props) => (props.active ? "0" : "-500px")};
     top: 0;
     width: 70vw;
@@ -27,11 +28,15 @@ export const MobileNavbarMenu = styled.ul`
     transition: right 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media (min-width: ${sm}) {
+        right: ${(props) => (props.active ? "0" : "-650px")};
+    }
+
+    @media (min-width: ${md}) {
         all: unset;
         display: flex;
         flex-direction: row;
         list-style: none;
-        gap: 24px;
+        gap: 32px;
     }
 
     @media (min-width: ${lg}) {

@@ -19,15 +19,13 @@ export default function Home() {
             <section>
                 <Hero />
             </section>
-            <section className={styles.servicesSection}>
+            <section id="servicesContainer" className={styles.servicesSection}>
                 <Layout>
                     <h1>OUR SERVICES</h1>
                     <hr className={styles.separator} />
                     <div className={styles.servicesContainer}>
                         <ServiceItem
                             imageAltText={"A computer with tools on the screen"}
-                            imageHeight={696}
-                            imageWidth={800}
                             imageUrl="/images/pc-icon.png"
                             serviceName="Computer Services"
                             serviceInfo={`We have many years of experience with computers. We use computers for work and gaming so we know what a computer needs to be reliable and fast.`}
@@ -37,8 +35,6 @@ export default function Home() {
                             imageAltText={
                                 "A cellphone with tools on the screen"
                             }
-                            imageHeight={899}
-                            imageWidth={691}
                             imageUrl="/images/phone-icon.png"
                             serviceName="Cellphone Services"
                             serviceInfo={`We know how important cell phones are to our customers, that’s why we have phone specialists with us. We guarantee you a fast and amazing service.`}

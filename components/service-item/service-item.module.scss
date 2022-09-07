@@ -4,28 +4,34 @@
 .serviceContainer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
     justify-content: center;
-    // border: 2px solid $primary-text-color;
-    padding: 48px 16px;
+    padding: 54px 24px;
     border-radius: 5px;
     background-color: $complementary-color;
     box-shadow: rgb(0 0 0 / 25%) 0px 3px 6px 0px;
 
     @media (min-width: $sm) {
-        gap: 24px;
+        gap: 40px;
+        padding: 80px 50px;
     }
 
     @media (min-width: $md) {
-        gap: 32px;
-        border-width: 2px;
-        padding: 24px 32px;
+        padding: 80px;
     }
 
+    @media (min-width: $lg) {
+        gap: 0;
+        height: 700px;
+        justify-content: space-between;
+        padding: 100px 60px;
+    }
+    
+
     @media (min-width: $xl) {
-        width: 550px;
-        padding: 80px 40px;
+        width: 600px;
+        padding: 100px 80px;
     }
 
     .iconContainer {

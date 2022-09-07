@@ -4,8 +4,12 @@
     width: 75%;
     margin: 0 auto;
 
-    @media (min-width: $md){
-        width: 45%;
+    @media (min-width: $sm){
+        width: 65%;
+    }
+
+    @media (min-width: $lg){
+        width: 90%;
     }
 
     @media (min-width: $xl) {

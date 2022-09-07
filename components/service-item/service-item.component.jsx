@@ -9,8 +9,6 @@ import styles from "./service-item.module.scss";
 export const ServiceItem = ({
     imageAltText,
     imageUrl,
-    imageWidth,
-    imageHeight,
     serviceName,
     serviceInfo,
     moreServiceInfo,
@@ -18,13 +16,7 @@ export const ServiceItem = ({
     return (
         <div className={styles.serviceContainer}>
             <div className={styles.iconContainer}>
-                <Image
-                    alt={imageAltText}
-                    src={imageUrl}
-                    width={imageWidth}
-                    height={imageHeight}
-                    layout="fill"
-                />
+                <Image alt={imageAltText} src={imageUrl} layout="fill" />
             </div>
             <h2>{serviceName}</h2>
             <p>{serviceInfo}</p>

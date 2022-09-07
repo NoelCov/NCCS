@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import { Button } from "../button/Button.component";
+import { Button } from "../button/button.component";
 
 import styles from "./service-item.module.scss";
 

@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Hero } from "../components/hero/hero.component.js";
+import { Hero } from "../components/hero/hero.component";
 import { ServiceItem } from "../components/service-item/service-item.component";
 import { Layout } from "../components/layout/layout.component";
 

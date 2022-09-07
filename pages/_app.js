@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 
-import { Navbar } from "../components/navbar/Navbar.component";
+import { Navbar } from "../components/navbar/navbar.component";
 
 function MyApp({ Component, pageProps }) {
     return (

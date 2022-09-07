@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./hero.module.scss";
 
-import { Button } from "../button/Button.component";
+import { Button } from "../button/button.component";
 
 export const Hero = () => {
     return (

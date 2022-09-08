@@ -9,6 +9,11 @@ import Logo from "../../public/images/logo.png";
 
 import { MobileNavbarMenu } from "./mobileNavbarMenu/mobileNavbarMenu";
 
+import { AiFillHome } from "react-icons/ai";
+import { AiFillContacts } from "react-icons/ai";
+import { RiComputerFill } from "react-icons/ri";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
+
 export const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
 
@@ -39,12 +44,24 @@ export const Navbar = () => {
 
             <MobileNavbarMenu active={isActive}>
                 <Link href="/">
-                    <li className={styles.navbarLink}>HOME</li>
+                    <li className={styles.navbarLink}>
+                        <AiFillHome className={styles.linkIcon} />
+                        <p className={styles.linkText}>HOME</p>
+                    </li>
                 </Link>
 
-                <li className={styles.navbarLink}>CONTACT US</li>
-                <li className={styles.navbarLink}>COMPUTER SERVICES</li>
-                <li className={styles.navbarLink}>CELLPHONE SERVICES</li>
+                <li className={styles.navbarLink}>
+                    <AiFillContacts className={styles.linkIcon} />
+                    <p className={styles.linkText}>CONTACT US</p>
+                </li>
+                <li className={styles.navbarLink}>
+                    <RiComputerFill className={styles.linkIcon} />
+                    <p className={styles.linkText}>COMPUTER SERVICES</p>
+                </li>
+                <li className={styles.navbarLink}>
+                    <MdOutlinePhoneAndroid className={styles.linkIcon} />
+                    <p className={styles.linkText}>CELLPHONE SERVICES</p>
+                </li>
             </MobileNavbarMenu>
         </nav>
     );

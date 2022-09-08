@@ -16,18 +16,20 @@ export const MobileNavbarMenu = styled.ul`
     color: ${primaryTextColor};
     right: ${(props) => (props.active ? "0" : "-500px")};
     top: 0;
-    width: 70vw;
+    width: 80vw;
     z-index: 2;
     height: 100vh;
     flex-direction: column;
     list-style: none;
     margin: 0;
-    padding: 150px 0;
-    align-items: center;
+    padding: 160px 0 0 24px;
     gap: 80px;
     transition: right 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: flex-start;
 
     @media (min-width: ${sm}) {
+        width: 60vw;
+        padding: 160px 0 0 48px;
         right: ${(props) => (props.active ? "0" : "-650px")};
     }
 

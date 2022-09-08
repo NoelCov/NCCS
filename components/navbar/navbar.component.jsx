@@ -46,21 +46,21 @@ export const Navbar = () => {
                 <Link href="/">
                     <li className={styles.navbarLink}>
                         <AiFillHome className={styles.linkIcon} />
-                        <p className={styles.linkText}>HOME</p>
+                        <span className={styles.linkText}>HOME</span>
                     </li>
                 </Link>
 
                 <li className={styles.navbarLink}>
                     <AiFillContacts className={styles.linkIcon} />
-                    <p className={styles.linkText}>CONTACT US</p>
+                    <span className={styles.linkText}>CONTACT US</span>
                 </li>
                 <li className={styles.navbarLink}>
                     <RiComputerFill className={styles.linkIcon} />
-                    <p className={styles.linkText}>COMPUTER SERVICES</p>
+                    <span className={styles.linkText}>COMPUTER SERVICES</span>
                 </li>
                 <li className={styles.navbarLink}>
                     <MdOutlinePhoneAndroid className={styles.linkIcon} />
-                    <p className={styles.linkText}>CELLPHONE SERVICES</p>
+                    <span className={styles.linkText}>PHONE SERVICES</span>
                 </li>
             </MobileNavbarMenu>
         </nav>

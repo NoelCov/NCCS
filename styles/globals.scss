@@ -12,10 +12,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     overflow-x: hidden;
-    color: $secondary-text-color;
+
 
     p {
         font-size: 1.6rem;
+        color: $secondary-text-color;
 
         @media (min-width: $sm){
             font-size: 1.8rem;
@@ -27,6 +28,7 @@ body {
     }
 
     h1 {
+        color: $primary-text-color;
         font-size: 2.6rem;
 
         @media (min-width: $sm){
@@ -43,6 +45,7 @@ body {
     }
 
     h2 {
+        color: $primary-text-color;
         font-size: 2rem;
 
         @media (min-width: $sm){
@@ -65,14 +68,13 @@ body {
     h5,
     h6,
     p {
-        color: $primary-text-color;
         margin: 0;
         padding: 0;
         font-family: "Nunito Sans";
     }
 
     a {
-        color: inherit;
+        color: $primary-text-color;
         text-decoration: none;
     }
 

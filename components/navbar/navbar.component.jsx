@@ -1,13 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { useState } from "react";
 
 import styles from "./Navbar.module.scss";
 
-import Logo from "../../public/images/logo.png";
-
 import { MobileNavbarMenu } from "./mobileNavbarMenu/mobileNavbarMenu";
+import { CompanyLogo } from "../company-logo/company-logo.component";
 
 import { AiFillHome } from "react-icons/ai";
 import { AiFillContacts } from "react-icons/ai";
@@ -23,15 +21,7 @@ export const Navbar = () => {
 
     return (
         <nav className={styles.navbarContainer}>
-            <Link href="/">
-                <a className={styles.imageContainer}>
-                    <Image
-                        src={Logo}
-                        layout="fill"
-                        alt="A desktop computer and the text NCCS, acronym for Noel's Computer and Cellphones Services"
-                    />
-                </a>
-            </Link>
+            <CompanyLogo />
 
             <div
                 className={styles.hamburgerMenu}

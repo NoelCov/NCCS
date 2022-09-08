@@ -1,0 +1,12 @@
+@import "../../utils/breakpoints.scss";
+
+.imageContainer {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $lg){
+        width: 80px;
+        height: 80px;
+    }
+}

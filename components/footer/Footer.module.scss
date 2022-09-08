@@ -1,0 +1,8 @@
+@import "../../utils/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+.footerContainer {
+    background-color: #2E364F;
+    display: flex;
+    flex-direction: column;
+}

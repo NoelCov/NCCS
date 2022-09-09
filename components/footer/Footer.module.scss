@@ -2,26 +2,55 @@
 @import "../../styles/colors.scss";
 
 .footerContainer {
-    background-color: #2E364F;
+    background-color: #2e364f;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 32px;
 
+    @media (min-width: $sm) {
+        padding: 32px 100px;
+    }
+
     .imageContainer {
         position: relative;
         width: 80px;
         height: 80px;
+
+        @media (min-width: $xl) {
+            width: 160px;
+            height: 160px;
+        }
     }
 
-    .infoContainer {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+    .informationContainer {
+        @media (min-width: $sm) {
+            width: 100%;
+        }
 
-        .infoText {
-            font-size: 1.6rem;
+        @media (min-width: $lg) {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (min-width: $xl) {
+        }
+
+        .infoContainer {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+
+    .infoText {
+        font-size: 1.6rem;
+    
+        @media (min-width: $lg){
+            font-size: 1.8rem;
         }
     }
 }

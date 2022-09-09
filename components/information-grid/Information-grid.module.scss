@@ -2,25 +2,38 @@
 @import "../../styles/colors.scss";
 
 .informationGridContainer {
+    position: relative;
     padding: 32px 0px;
     align-self: flex-start;
-    width: 100%;
 
-    
 
     .gridTitle {
         color: $primary-text-color;
         font-weight: bold;
         font-size: 1.8rem;
         margin-bottom: 16px;
-        
+
+        @media (min-width: $lg){
+            font-size: 2.4rem;
+        }
     }
 
     .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         color: $secondary-text-color;
-        row-gap: 16px;
-        justify-content: space-between;
+        gap: 16px;
+
+        @media (min-width: "410px"){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 16px;
+        }
+
+        @media (min-width: $lg){
+            display: flex;
+            justify-content: space-between;
+        }
     }
+
 }

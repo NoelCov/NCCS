@@ -16,19 +16,29 @@ export const Footer = () => {
             <div className={styles.imageContainer}>
                 <CompanyLogo />
             </div>
-            <div className={styles.gridsContainer}>
+            <div className={styles.informationContainer}>
                 <InformationGrid title="Navigate to">
                     <Link href="/">
-                        <a>Home</a>
+                        <span className={styles.infoText}>Home</span>
                     </Link>
                     <Link href="#">
-                        <a>Contact Us</a>
+                        <a>
+                            <span className={styles.infoText}>Contact Us</span>
+                        </a>
                     </Link>
                     <Link href="#">
-                        <a>Computer Services</a>
+                        <a>
+                            <span className={styles.infoText}>
+                                Computer Services
+                            </span>
+                        </a>
                     </Link>
                     <Link href="#">
-                        <a>Phone Services</a>
+                        <a>
+                            <span className={styles.infoText}>
+                                Phone Services
+                            </span>
+                        </a>
                     </Link>
                 </InformationGrid>
 
@@ -40,7 +50,7 @@ export const Footer = () => {
                     <div className={styles.infoContainer}>
                         <MdEmail className={styles.infoText} />
                         <span className={styles.infoText}>
-                            noelaronc@gmail.com
+                            {"noelaronc@gmail.com"}
                         </span>
                     </div>
                 </InformationGrid>

@@ -5,12 +5,10 @@ import Image from "next/image";
 
 import Logo from "../../public/images/logo.png";
 
-import styles from "./Company-logo.module.scss";
-
 export const CompanyLogo = () => {
     return (
         <Link href="/">
-            <a className={styles.imageContainer}>
+            <a>
                 <Image
                     src={Logo}
                     layout="fill"

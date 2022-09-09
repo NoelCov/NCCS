@@ -21,8 +21,9 @@ export const Navbar = () => {
 
     return (
         <nav className={styles.navbarContainer}>
-            <CompanyLogo />
-
+            <div className={styles.imageContainer}>
+                <CompanyLogo />
+            </div>
             <div
                 className={styles.hamburgerMenu}
                 onClick={() => toggleMobileNavbar()}

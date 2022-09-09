@@ -1,0 +1,26 @@
+@import "../../utils/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+.informationGridContainer {
+    padding: 32px 0px;
+    align-self: flex-start;
+    width: 100%;
+
+    
+
+    .gridTitle {
+        color: $primary-text-color;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+        
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: $secondary-text-color;
+        row-gap: 16px;
+        justify-content: space-between;
+    }
+}

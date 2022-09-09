@@ -74,8 +74,9 @@ body {
     }
 
     a {
-        color: $primary-text-color;
+        font-size: 1.6rem;
         text-decoration: none;
+        color: inherit;
     }
 
     * {

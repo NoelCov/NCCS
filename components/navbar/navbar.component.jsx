@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { useState } from "react";
 
+import onClickOutside from "react-onclickoutside";
+
 import styles from "./Navbar.module.scss";
 
 import { MobileNavbarMenu } from "./mobileNavbarMenu/mobileNavbarMenu";
@@ -12,12 +14,14 @@ import { AiFillContacts } from "react-icons/ai";
 import { RiComputerFill } from "react-icons/ri";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 
-export const Navbar = () => {
+const NavbarComponent = () => {
     const [isActive, setIsActive] = useState(false);
 
     const toggleMobileNavbar = () => {
         setIsActive(!isActive);
     };
+
+    NavbarComponent.handleClickOutside = () => setIsActive(false);
 
     return (
         <nav className={styles.navbarContainer}>
@@ -57,3 +61,9 @@ export const Navbar = () => {
         </nav>
     );
 };
+
+const clickOutsideConfig = {
+    handleClickOutside: () => NavbarComponent.handleClickOutside,
+};
+
+export const Navbar = onClickOutside(NavbarComponent, clickOutsideConfig);

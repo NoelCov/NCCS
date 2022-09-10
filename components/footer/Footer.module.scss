@@ -49,8 +49,22 @@
     .infoText {
         font-size: 1.6rem;
     
+        &:hover {
+            color: $primary-text-color;
+        }
+        
         @media (min-width: $lg){
             font-size: 1.8rem;
+        }
+    }
+
+    .copyrightText {
+        text-align: center;
+        margin-top: 16px;
+        font-size: 1.4rem;
+    
+        @media (min-width: $md){
+            font-size: 1.6rem;
         }
     }
 }

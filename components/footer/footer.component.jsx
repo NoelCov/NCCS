@@ -19,7 +19,9 @@ export const Footer = () => {
             <div className={styles.informationContainer}>
                 <InformationGrid title="Navigate to">
                     <Link href="/">
-                        <span className={styles.infoText}>Home</span>
+                        <a>
+                            <span className={styles.infoText}>Home</span>
+                        </a>
                     </Link>
                     <Link href="#">
                         <a>
@@ -55,6 +57,9 @@ export const Footer = () => {
                     </div>
                 </InformationGrid>
             </div>
+            <p className={styles.copyrightText}>
+                Copyright &copy; 2022 NCCS. All rights reserved.
+            </p>
         </footer>
     );
 };

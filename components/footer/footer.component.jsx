@@ -20,24 +20,24 @@ export const Footer = () => {
                 <InformationGrid title="Navigate to">
                     <Link href="/">
                         <a>
-                            <span className={styles.infoText}>Home</span>
+                            <span className={styles.infoLink}>Home</span>
                         </a>
                     </Link>
                     <Link href="#">
                         <a>
-                            <span className={styles.infoText}>Contact Us</span>
+                            <span className={styles.infoLink}>Contact Us</span>
                         </a>
                     </Link>
                     <Link href="#">
                         <a>
-                            <span className={styles.infoText}>
+                            <span className={styles.infoLink}>
                                 Computer Services
                             </span>
                         </a>
                     </Link>
                     <Link href="#">
                         <a>
-                            <span className={styles.infoText}>
+                            <span className={styles.infoLink}>
                                 Phone Services
                             </span>
                         </a>
@@ -52,7 +52,7 @@ export const Footer = () => {
                     <div className={styles.infoContainer}>
                         <MdEmail className={styles.infoText} />
                         <span className={styles.infoText}>
-                            {"noelaronc@gmail.com"}
+                            {"nccsshop@gmail.com"}
                         </span>
                     </div>
                 </InformationGrid>

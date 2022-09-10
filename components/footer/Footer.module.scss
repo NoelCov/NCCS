@@ -46,15 +46,17 @@
         }
     }
 
+    .infoLink,
     .infoText {
         font-size: 1.6rem;
-    
+
+        @media (min-width: $lg) {
+            font-size: 1.8rem;
+        }
+    }
+    .infoLink {
         &:hover {
             color: $primary-text-color;
-        }
-        
-        @media (min-width: $lg){
-            font-size: 1.8rem;
         }
     }
 
@@ -62,8 +64,8 @@
         text-align: center;
         margin-top: 16px;
         font-size: 1.4rem;
-    
-        @media (min-width: $md){
+
+        @media (min-width: $md) {
             font-size: 1.6rem;
         }
     }

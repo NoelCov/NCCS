@@ -18,7 +18,7 @@ export const ServiceItem = ({
             <div className={styles.iconContainer}>
                 <Image alt={imageAltText} src={imageUrl} layout="fill" />
             </div>
-            <h2>{serviceName}</h2>
+            <h3>{serviceName}</h3>
             <p>{serviceInfo}</p>
             <p>{moreServiceInfo}</p>
             <Button>LEARN MORE</Button>

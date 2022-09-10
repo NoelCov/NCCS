@@ -13,50 +13,55 @@ body {
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     overflow-x: hidden;
 
-
     p {
         font-size: 1.6rem;
         color: $secondary-text-color;
 
-        @media (min-width: $sm){
+        @media (min-width: $sm) {
             font-size: 1.8rem;
         }
 
-        @media (min-width: $lg){
+        @media (min-width: $lg) {
             font-size: 2rem;
         }
     }
 
-    h1 {
+    h1,
+    h2,
+    h3 {
         color: $primary-text-color;
-        font-size: 2.6rem;
-
-        @media (min-width: $sm){
-            font-size: 2.8rem;
-        }
-    
-        @media (min-width: $md){
-            font-size: 3rem;
-        }
-    
-        @media (min-width: $lg){
-            font-size: 4.5rem;
-        }
     }
 
     h2 {
         color: $primary-text-color;
+        font-size: 2.6rem;
+
+        @media (min-width: $sm) {
+            font-size: 2.8rem;
+        }
+
+        @media (min-width: $md) {
+            font-size: 3rem;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 4.5rem;
+        }
+    }
+
+    h3 {
+        color: $primary-text-color;
         font-size: 2rem;
 
-        @media (min-width: $sm){
+        @media (min-width: $sm) {
             font-size: 2.2rem;
         }
-    
-        @media (min-width: $md){
+
+        @media (min-width: $md) {
             font-size: 2.6rem;
         }
-    
-        @media (min-width: $lg){
+
+        @media (min-width: $lg) {
             font-size: 2.8rem;
         }
     }

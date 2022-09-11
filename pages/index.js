@@ -76,7 +76,9 @@ export default function Home() {
                         <div className={styles.imageContainer}>
                             <Image
                                 src={AboutUsImage}
-                                layout="fill"
+                                height={1200}
+                                width={1920}
+                                layout="responsive"
                                 alt="A person fixing a phone"
                             />
                         </div>

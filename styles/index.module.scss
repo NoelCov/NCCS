@@ -2,9 +2,16 @@
 @import "../utils/breakpoints.scss";
 
 .contentContainer {
-    @media (min-width: $xl) {
+    @media (min-width: $md){
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    @media (min-width: $lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
         justify-items: center;
         align-items: center;
     }
@@ -28,6 +35,7 @@
 }
 
 .servicesSection {
+    position: relative;
     background-color: $primary-color;
     text-align: center;
     color: $primary-text-color;
@@ -74,6 +82,7 @@
 }
 
 .aboutUsSection {
+    position: relative;
     background-color: $complementary-color;
     display: flex;
     flex-direction: column;
@@ -97,20 +106,29 @@
             color: $contrast-color;
         }
 
-        @media (min-width: $lg) {
+        @media (min-width: $md){
+            width: 90%;
             margin: 0 auto;
-            width: 80%;
+            padding: 40px 24px;
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: $lg) {
+            justify-content: center;
+            padding: 0;
+            background-color: inherit;
+            box-shadow: none;
+            text-align: left;
+
+            p {
+                font-size: 2.4rem;
+            }
         }
 
         @media (min-width: $xl) {
-            background-color: inherit;
-            box-shadow: none;
-            width: 50%;
-
-            justify-content: center;
-            height: 300px;
-            text-align: left;
-
             p {
                 font-size: 3rem;
             }
@@ -119,19 +137,12 @@
 
     .imageContainer {
         display: none;
-        
-        @media (min-width: $lg) {
+
+        @media (min-width: $md){
             display: inline;
             position: relative;
-            width: 700px;
-            height: 400px;
-            margin: 80px auto 0;
-        }
-
-        @media (min-width: $xl) {
-            margin: 0;
-            width: 1000px;
-            height: 600px;
+            width: 100%;
+            margin: 0 auto;   
         }
     }
 }

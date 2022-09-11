@@ -5,7 +5,7 @@ import { Hero } from "../components/hero/hero.component";
 import { ServiceItem } from "../components/service-item/service-item.component";
 import { Layout } from "../components/layout/layout.component";
 
-import AboutUsImage from "../public/images/AboutUsImg.png";
+import AboutUsImage from "../public/images/aboutUsImg.png";
 
 import styles from "../styles/index.module.scss";
 

@@ -10,6 +10,7 @@
 
     @media (min-width: $lg) {
         display: grid;
+        grid-template-columns: 40% 60%;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         justify-items: center;
@@ -122,15 +123,11 @@
             background-color: inherit;
             box-shadow: none;
             text-align: left;
-
-            p {
-                font-size: 2.4rem;
-            }
         }
 
         @media (min-width: $xl) {
             p {
-                font-size: 3rem;
+                font-size: 2.2rem;
             }
         }
     }

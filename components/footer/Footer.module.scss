@@ -5,12 +5,17 @@
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     padding: 32px;
 
     @media (min-width: $sm) {
         padding: 32px 100px;
+    }
+
+    @media (min-width: $xl){
+        padding: 100px;
     }
 
     .imageContainer {
@@ -67,6 +72,11 @@
 
         @media (min-width: $md) {
             font-size: 1.6rem;
+        }
+
+        @media (min-width: $xl) {
+            position:absolute;
+            bottom: 24px;
         }
     }
 }

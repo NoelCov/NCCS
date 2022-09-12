@@ -16,7 +16,7 @@ export const MobileNavbarMenu = styled.ul`
     color: ${primaryTextColor};
     right: ${(props) => (props.active ? "0" : "-500px")};
     top: 0;
-    width: 60vw;
+    width: 70vw;
     z-index: 2;
     height: 100vh;
     flex-direction: column;

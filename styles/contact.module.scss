@@ -1,0 +1,62 @@
+@import "../utils/breakpoints.scss";
+@import "../styles/colors.scss";
+
+.contactPage {
+    padding: 80px 0;
+    background-color: $primary-color;
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+        // gap: 60px;
+    
+        // @media (min-width: $md) {
+        //     width: 65%;
+        // }
+    
+        // @media (min-width: $lg) {
+        //     width: 55%;
+        // }
+    
+        // @media (min-width: $xl) {
+        //     gap: 40px;
+        //     width: 45%;
+        // }
+
+        .label {
+            font-size: 1.5rem;
+            font-family: "Poppins";
+            color: $secondary-text-color;
+
+            span {
+                color: orange;
+            }
+        }
+    
+    
+        .namesInputContainer {    
+            display: flex;
+            flex-direction: column;
+            gap: 32px;   
+
+        }
+    
+        .inputField {
+            background-color: inherit;
+            border: none;
+            border-bottom: 1px solid $secondary-text-color;
+            width: 100%;
+            font-family: "Nunito sans";
+            font-size: 1.6rem;
+            color: $primary-text-color;
+        
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+

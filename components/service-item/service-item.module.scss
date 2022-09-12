@@ -18,11 +18,14 @@
     }
 
     @media (min-width: $md) {
+        margin: 0 auto;
         padding: 80px;
+        width: 500px;
     }
 
     @media (min-width: $lg) {
         gap: 0;
+        width: 600px;
         height: 700px;
         justify-content: space-between;
         padding: 100px 60px;
@@ -30,8 +33,9 @@
     
 
     @media (min-width: $xl) {
-        width: 600px;
-        padding: 100px 80px;
+        width: 550px;
+        height: 650px;
+        padding: 80px;
     }
 
     .iconContainer {

@@ -21,7 +21,7 @@ export const ServiceItem = ({
             <h3>{serviceName}</h3>
             <p>{serviceInfo}</p>
             <p>{moreServiceInfo}</p>
-            <Button>LEARN MORE</Button>
+            {/* <Button>LEARN MORE</Button> */}
         </div>
     );
 };

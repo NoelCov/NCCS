@@ -6,6 +6,7 @@ import { ServiceItem } from "../components/service-item/service-item.component";
 import { Layout } from "../components/layout/layout.component";
 
 import AboutUsImage from "../public/images/aboutUsImg.png";
+import Logo from "../public/images/logo.png";
 
 import styles from "../styles/index.module.scss";
 
@@ -13,11 +14,24 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>{"Noel's Computer and Cellphone Services"}</title>
+                <title>NCCS | Home Page</title>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                />
+                <meta name="author" content="NCCS" />
                 <meta
                     name="description"
-                    content="Noel's Computer and Cellphone Services is a shop located in Manteca, CA. We work on repairing and improving computers and cellphones."
+                    content="NCCS, accronym for Noel's Computer and Cellphone Services, is a shop located in Manteca, CA that especializes providing IT services for computers and cellphones."
                 />
+                <meta name="og:image" content={Logo.src} />
+                <meta name="twitter:url" content="https://nccs.vercel.app/" />
+                <meta name="twitter:title" content="NCCS | Home Page" />
+                <meta
+                    name="twitter:description"
+                    content="NCCS, accronym for Noel's Computer and Cellphone Services, is a shop located in Manteca, CA that especializes providing IT services for computers and cellphones."
+                />
+                <meta name="twitter:image" content={Logo.src} />
             </Head>
 
             <section>

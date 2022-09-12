@@ -40,21 +40,30 @@ const NavbarComponent = () => {
 
             <MobileNavbarMenu active={isActive}>
                 <Link href="/">
-                    <li className={styles.navbarLink}>
+                    <li
+                        className={styles.navbarLink}
+                        onClick={() => toggleMobileNavbar()}
+                    >
                         <AiFillHome className={styles.linkIcon} />
                         <span className={styles.linkText}>HOME</span>
                     </li>
                 </Link>
 
                 <Link href="/#aboutUs">
-                    <li className={styles.navbarLink}>
+                    <li
+                        className={styles.navbarLink}
+                        onClick={() => toggleMobileNavbar()}
+                    >
                         <TiBusinessCard className={styles.linkIcon} />
                         <span className={styles.linkText}>ABOUT US</span>
                     </li>
                 </Link>
 
                 <Link href="/contact">
-                    <li className={styles.navbarLink}>
+                    <li
+                        className={styles.navbarLink}
+                        onClick={() => toggleMobileNavbar()}
+                    >
                         <AiFillContacts className={styles.linkIcon} />
                         <span className={styles.linkText}>CONTACT US</span>
                     </li>

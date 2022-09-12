@@ -11,8 +11,9 @@ import { CompanyLogo } from "../company-logo/company-logo.component";
 
 import { AiFillHome } from "react-icons/ai";
 import { AiFillContacts } from "react-icons/ai";
-import { RiComputerFill } from "react-icons/ri";
-import { MdOutlinePhoneAndroid } from "react-icons/md";
+import { TiBusinessCard } from "react-icons/ti";
+// import { RiComputerFill } from "react-icons/ri";
+// import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 const NavbarComponent = () => {
     const [isActive, setIsActive] = useState(false);
@@ -45,18 +46,19 @@ const NavbarComponent = () => {
                     </li>
                 </Link>
 
-                <li className={styles.navbarLink}>
-                    <AiFillContacts className={styles.linkIcon} />
-                    <span className={styles.linkText}>CONTACT US</span>
-                </li>
-                <li className={styles.navbarLink}>
-                    <RiComputerFill className={styles.linkIcon} />
-                    <span className={styles.linkText}>COMPUTER SERVICES</span>
-                </li>
-                <li className={styles.navbarLink}>
-                    <MdOutlinePhoneAndroid className={styles.linkIcon} />
-                    <span className={styles.linkText}>PHONE SERVICES</span>
-                </li>
+                <Link href="/#aboutUs">
+                    <li className={styles.navbarLink}>
+                        <TiBusinessCard className={styles.linkIcon} />
+                        <span className={styles.linkText}>ABOUT US</span>
+                    </li>
+                </Link>
+
+                <Link href="/contact">
+                    <li className={styles.navbarLink}>
+                        <AiFillContacts className={styles.linkIcon} />
+                        <span className={styles.linkText}>CONTACT US</span>
+                    </li>
+                </Link>
             </MobileNavbarMenu>
         </nav>
     );

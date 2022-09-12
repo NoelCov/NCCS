@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import style from "../styles/contact.module.scss";
 
@@ -8,7 +8,31 @@ import { Button } from "../components/button/button.component";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                process.env.NEXT_PUBLIC_SERVICE_ID,
+                process.env.NEXT_PUBLIC_TEMPLATE_ID,
+                form.current,
+                process.env.NEXT_PUBLIC_KEY
+            )
+            .then(
+                (res) => {
+                    console.log(res.text);
+                },
+                (err) => {
+                    console.log(err.text);
+                }
+            );
+    };
+
     return (
         <div className={style.contactPage}>
             <Layout>
@@ -39,7 +63,12 @@ export default function Contact() {
                                 }
                             </b>
                         </p>
-                        <form className={style.form} autoComplete="off">
+                        <form
+                            className={style.form}
+                            ref={form}
+                            onSubmit={sendEmail}
+                            autoComplete="off"
+                        >
                             <div className={style.namesInputContainer}>
                                 <div>
                                     <label

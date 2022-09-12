@@ -56,7 +56,6 @@ export default function Contact() {
                                         required
                                     />
                                 </div>
-
                                 <div>
                                     <label
                                         htmlFor="lastName"
@@ -72,57 +71,54 @@ export default function Contact() {
                                         required
                                     />
                                 </div>
+                            </div>
 
-                                <div>
-                                    <label
-                                        htmlFor="email"
-                                        className={style.label}
-                                    >
-                                        Email <span>{"  *"}</span>
-                                    </label>
-                                    <input
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        className={style.inputField}
-                                        required
-                                    />
-                                </div>
+                            <div>
+                                <label htmlFor="email" className={style.label}>
+                                    Email <span>{"  *"}</span>
+                                </label>
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    className={style.inputField}
+                                    required
+                                />
+                            </div>
 
-                                <div>
-                                    <label
-                                        htmlFor="subject"
-                                        className={style.label}
-                                    >
-                                        Subject <span>{"  *"}</span>
-                                    </label>
-                                    <input
-                                        id="subject"
-                                        name="subject"
-                                        type="text"
-                                        className={style.inputField}
-                                        required
-                                    />
-                                </div>
+                            <div>
+                                <label
+                                    htmlFor="subject"
+                                    className={style.label}
+                                >
+                                    Subject <span>{"  *"}</span>
+                                </label>
+                                <input
+                                    id="subject"
+                                    name="subject"
+                                    type="text"
+                                    className={style.inputField}
+                                    required
+                                />
+                            </div>
 
-                                <div>
-                                    <label
-                                        htmlFor="message"
-                                        className={style.label}
-                                    >
-                                        Message <span>{"  *"}</span>
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        className={style.inputField}
-                                        required
-                                    />
-                                </div>
+                            <div>
+                                <label
+                                    htmlFor="message"
+                                    className={style.label}
+                                >
+                                    Message <span>{"  *"}</span>
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    className={style.inputField}
+                                    required
+                                />
+                            </div>
 
-                                <div className={style.buttonContainer}>
-                                    <Button>Send message</Button>
-                                </div>
+                            <div className={style.buttonContainer}>
+                                <Button>Send message</Button>
                             </div>
                         </form>
                     </div>

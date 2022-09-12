@@ -5,58 +5,130 @@
     padding: 80px 0;
     background-color: $complementary-color;
 
-    .formContainer {
+    h2 {
+        text-align: center;
+    }
+
+    .separator {
+        height: 3px;
+        background-color: $primary-text-color;
+        width: 120px;
+        border: none;
+        margin-bottom: 54px;
+
+        @media (min-width: $sm) {
+            width: 140px;
+            margin-bottom: 80px;
+        }
+
+        @media (min-width: $md) {
+            width: 160px;
+        }
+
+        @media (min-width: $lg) {
+            width: 260px;
+            height: 5px;
+            margin-bottom: 100px;
+        }
+
+        @media (min-width: $xl) {
+            margin-bottom: 140px;
+        }
+    }
+
+    .cardAndFormContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        width: 80%;
-        // gap: 60px;
-    
-        // @media (min-width: $md) {
-        //     width: 65%;
-        // }
-    
-        // @media (min-width: $lg) {
-        //     width: 55%;
-        // }
-    
-        // @media (min-width: $xl) {
-        //     gap: 40px;
-        //     width: 45%;
-        // }
+        gap: 40px;
 
-        .label {
-            font-size: 1.5rem;
-            font-family: "Poppins";
-            color: $secondary-text-color;
-
-            span {
-                color: orange;
-            }
-        }
-    
-    
-        .namesInputContainer {    
+        .formContainer {
             display: flex;
             flex-direction: column;
-            gap: 32px;   
 
+            h3 {
+                margin-bottom: 8px;
+            };
+
+            p {
+                font-size: 1.5rem;
+                color: $contrast-color;
+            }
+            
+            .form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // margin: 36px auto 0;
+                // gap: 60px;
+
+                // @media (min-width: $md) {
+                //     width: 65%;
+                // }
+
+                // @media (min-width: $lg) {
+                //     width: 55%;
+                // }
+
+                // @media (min-width: $xl) {
+                //     gap: 40px;
+                //     width: 45%;
+                // }
+
+                .label {
+                    font-size: 1.5rem;
+                    font-family: "Poppins";
+                    color: $primary-text-color;
+
+                    span {
+                        color: orange;
+                    }
+                }
+
+                .namesInputContainer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    margin-top: 24px;
+                }
+
+                .inputField {
+                    background-color: inherit;
+                    border: none;
+                    border-bottom: 1px solid $secondary-text-color;
+                    width: 100%;
+                    font-family: "Nunito sans";
+                    font-size: 1.6rem;
+                    color: $primary-text-color;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .buttonContainer {
+                    // width: 100%;
+                }
+            }
         }
-    
-        .inputField {
-            background-color: inherit;
-            border: none;
-            border-bottom: 1px solid $secondary-text-color;
-            width: 100%;
-            font-family: "Nunito sans";
-            font-size: 1.6rem;
-            color: $primary-text-color;
-        
-            &:focus {
-                outline: none;
+
+        .contactInformationCard {
+            background-color: $primary-color;
+            padding: 16px 32px 16px 32px;
+            border-radius: 4px;
+            box-shadow: rgb(0 0 0 / 25%) 0px 3px 6px 0px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .contactInformationContainer {
+                display: flex;
+                gap: 16px;
+                color: $secondary-text-color;
+                font-size: 1.6rem;
+                align-items: center;
+                margin-top: 16px;
             }
         }
     }
 }
-

@@ -132,6 +132,7 @@ export default function Contact() {
                                     id="subject"
                                     name="subject"
                                     type="text"
+                                    rows={10}
                                     className={style.inputField}
                                     required
                                 />
@@ -147,6 +148,7 @@ export default function Contact() {
                                 <textarea
                                     id="message"
                                     name="message"
+                                    rows="5"
                                     className={style.inputField}
                                     required
                                 />

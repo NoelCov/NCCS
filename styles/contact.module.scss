@@ -129,7 +129,39 @@
                         outline: none;
                     }
                 }
+                .successMessage {
+                    margin-top: 16px;
+                    display: flex;
+                    gap: 8px;
+                    color: $contrast-color;
 
+                    p {
+                        font-size: 2.4rem;
+                        letter-spacing: 1px;
+                    }
+
+                    .icon {
+                        font-size: 3rem;
+                    }
+                }
+
+                .errorMessage {
+                    margin-top: 16px;
+                    display: flex;
+                    gap: 8px;
+
+                    p {
+                        font-size: 2.4rem;
+                        letter-spacing: 1px;
+                        color: $error-color;
+                    }
+
+                    .icon {
+                        color: $error-color;
+
+                        font-size: 3rem;
+                    }
+                }
             }
         }
 
@@ -164,4 +196,6 @@
             }
         }
     }
+
+
 }

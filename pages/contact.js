@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import style from "../styles/contact.module.scss";
 
@@ -7,11 +7,15 @@ import { Button } from "../components/button/button.component";
 
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { BiMessageError } from "react-icons/bi";
 
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const form = useRef();
+    const [successMessage, setSuccessMessage] = useState(false);
+    const [errorMessage, setErrorMessage] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -25,9 +29,11 @@ export default function Contact() {
             )
             .then(
                 (res) => {
-                    console.log(res.text);
+                    e.target.reset();
+                    setSuccessMessage(true);
                 },
                 (err) => {
+                    setErrorMessage(true);
                     console.log(err.text);
                 }
             );
@@ -149,6 +155,20 @@ export default function Contact() {
                             <div className={style.buttonContainer}>
                                 <Button>Send message</Button>
                             </div>
+                            {successMessage && (
+                                <span className={style.successMessage}>
+                                    <p>
+                                        Your message was delivered successfully!
+                                    </p>
+                                    <AiFillCheckCircle className={style.icon} />
+                                </span>
+                            )}
+                            {errorMessage && (
+                                <span className={style.errorMessage}>
+                                    <p>Your message could not be delivered.</p>
+                                    <BiMessageError className={style.icon} />
+                                </span>
+                            )}
                         </form>
                     </div>
                 </div>
